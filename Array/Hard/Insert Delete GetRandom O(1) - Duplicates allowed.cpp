@@ -37,7 +37,7 @@ public:
         return false;
          
     }
-    
+     
     int getRandom() {
         return a[rand()%a.size()].first;
     }
