@@ -7,7 +7,7 @@ public:
         
     }
     
-    bool insert(int val) {
+    bool insert(int val) { 
         auto it=mp.find(val);
         if(it == mp.end())
         {
