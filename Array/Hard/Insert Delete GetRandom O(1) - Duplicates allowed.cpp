@@ -14,7 +14,7 @@ public:
             mp[val].push_back(a.size());
             a.push_back(make_pair(val, mp[val].size()-1));
             return true;
-        }
+        } 
         else{
             mp[val].push_back(a.size());
             a.push_back(make_pair(val, mp[val].size()-1));
