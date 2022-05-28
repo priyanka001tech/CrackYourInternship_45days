@@ -30,22 +30,17 @@ public:
 
 class Solution {
 public:
-    int findCheapestPrice(int n, vector<vector<int>>& edges, int src, int dst, int k) {
-        vector<int> dist(n, INT_MAX);
-        dist[src]=0;
-        for(int i=0; i<=k; i++) {
-            vector<int> temp(n);
-            copy(dist.begin(), dist.end(), temp.begin());
-            for(auto e : edges) {
-                if(dist[e[0]]==INT_MAX)
-                    continue;
-                if(temp[e[1]]>dist[e[0]]+e[2])
-                    temp[e[1]]=dist[e[0]]+e[2];
-            }
-            copy(temp.begin(), temp.end(), dist.begin());
+    int findCheapestPrice(int n, vector<vector<int>>& a, int src, int sink, int k) {
+        
+        vector<int> c(n, 1e8);
+        c[src] = 0;
+        
+        for(int z=0; z<=k; z++){
+            vector<int> C(c);
+            for(auto e: a)
+                C[e[1]] = min(C[e[1]], c[e[0]] + e[2]);
+            c = C;
         }
-        if(dist[dst]==INT_MAX)
-            return -1;
-        return dist[dst];
+        return c[sink] == 1e8 ? -1 : c[sink];
     }
 };
