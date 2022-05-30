@@ -1,3 +1,4 @@
+//O(N+K)
 // Counting sort which takes negative numbers as well
 #include <algorithm>
 #include <iostream>
