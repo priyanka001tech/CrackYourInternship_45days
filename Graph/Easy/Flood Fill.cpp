@@ -9,7 +9,7 @@ public:
         
         fillAlgo(image, sr+1, sc, newColor, color);
         fillAlgo(image, sr, sc+1, newColor, color);
-        fillAlgo(image, sr-1, sc, newColor, color);
+        fillAlgo(image, sr-1, sc, newColor, color); 
         fillAlgo(image, sr, sc-1, newColor, color);
         
     }
