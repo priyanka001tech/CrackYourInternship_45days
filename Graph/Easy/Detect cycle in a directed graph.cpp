@@ -1,6 +1,7 @@
 class Solution {
   public:
     // Function to detect cycle in a directed graph.
+  
     bool cycleUtil(int src, vector<int> adj[], vector<int>& vis, vector<int>& st){
         st[src]=1;
         if(!vis[src]){
@@ -9,7 +10,7 @@ class Solution {
                 if(st[i]) return true;
                 if(!vis[i] && cycleUtil(i, adj, vis, st)){
                     return true;
-                }
+                } 
             }
         }
         st[src]=0;
