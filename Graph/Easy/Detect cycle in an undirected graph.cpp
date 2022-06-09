@@ -9,7 +9,7 @@ class Solution {
                 if(!vis[x] && cycleUtil(x, adj, vis, i)){
                     return true;
                 }
-            }
+            } 
         }
         return false;
     }
