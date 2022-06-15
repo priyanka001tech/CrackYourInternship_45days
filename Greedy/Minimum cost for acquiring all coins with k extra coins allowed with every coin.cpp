@@ -1,7 +1,7 @@
 // C++ program to acquire all n coins
 #include<bits/stdc++.h>
 using namespace std;
- 
+  
 // function to calculate min cost
 int minCost(int coin[], int n, int k)
 {
