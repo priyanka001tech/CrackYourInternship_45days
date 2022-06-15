@@ -6,7 +6,7 @@ using namespace std;
 int minCost(int coin[], int n, int k)
 {
     // sort the coins value
-    sort(coin, coin + n);
+    sort(coin, coin + n); 
  
     // calculate no. of
     // coins needed
