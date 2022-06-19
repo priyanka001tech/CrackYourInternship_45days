@@ -6,7 +6,7 @@ public:
         } 
         findAns(root->left,ans);
         ans.push_back(root->val);
-        findAns(root->right,ans);
+        findAns(root->right,ans); 
     }
     vector<int> inorderTraversal(TreeNode* root) {
         vector<int> ans;
