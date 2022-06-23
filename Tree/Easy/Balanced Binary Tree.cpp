@@ -3,7 +3,7 @@ public:
     int findAns(TreeNode* root){
         if(root==NULL) return 0;
          
-        int l=findAns(root->left);
+        int l=findAns(root->left); 
         if(l==-1) return -1;
         
         int r=findAns(root->right);
