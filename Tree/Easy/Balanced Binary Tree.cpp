@@ -7,7 +7,7 @@ public:
         if(l==-1) return -1;
         
         int r=findAns(root->right);
-        if(r==-1) return -1;
+        if(r==-1) return -1; 
         
         if(abs(l-r)>1) return -1;
         
