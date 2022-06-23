@@ -2,7 +2,7 @@ class Solution {
 public:
     int findAns(TreeNode* root){
         if(root==NULL) return 0;
-        
+         
         int l=findAns(root->left);
         if(l==-1) return -1;
         
