@@ -14,7 +14,7 @@ public:
            { 
                s[j]=s[i]; 
                j++;
-           }
+           }   
         }
         cout << s << endl;
         // for 2nd string
