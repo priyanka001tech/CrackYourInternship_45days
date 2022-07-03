@@ -11,7 +11,7 @@ public:
                 j=max(0,j); // j will never be -ve
            }
            else
-           {
+           { 
                s[j]=s[i];
                j++;
            }
