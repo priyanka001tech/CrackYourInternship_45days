@@ -6,7 +6,7 @@ public:
         for(int i=0;i<s.size();i++) 
         {
            if(s[i]=='#') 
-           {
+           { 
                 j--;
                 j=max(0,j); // j will never be -ve
            }
