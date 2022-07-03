@@ -12,7 +12,7 @@ public:
            }
            else
            { 
-               s[j]=s[i];
+               s[j]=s[i]; 
                j++;
            }
         }
