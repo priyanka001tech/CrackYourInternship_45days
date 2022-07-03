@@ -7,7 +7,7 @@ public:
         {
            if(s[i]=='#') 
            { 
-                j--;
+                j--; 
                 j=max(0,j); // j will never be -ve
            }
            else
