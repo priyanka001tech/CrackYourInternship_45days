@@ -3,7 +3,7 @@ public:
     bool backspaceCompare(string s, string t) {
         int j=0,k=0;
         // for 1st string
-        for(int i=0;i<s.size();i++)
+        for(int i=0;i<s.size();i++) 
         {
            if(s[i]=='#') 
            {
