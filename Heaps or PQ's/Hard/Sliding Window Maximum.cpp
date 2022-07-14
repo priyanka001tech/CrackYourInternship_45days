@@ -4,7 +4,7 @@ public:
         vector<int> ans;
         list<int> l; 
         int i=0,j=0;
-        int n=arr.size(); 
+        int n=arr.size();  
         while(j<n){
             while(l.size()>0 && l.back()<arr[j]){
                 l.pop_back(); 
