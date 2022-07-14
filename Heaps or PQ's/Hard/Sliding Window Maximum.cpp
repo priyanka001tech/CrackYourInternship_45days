@@ -1,6 +1,6 @@
 class Solution {
 public:
-    vector<int> maxSlidingWindow(vector<int>& arr, int k) {
+    vector<int> maxSlidingWindow(vector<int>& arr, int k)  {
         vector<int> ans;
         list<int> l;
         int i=0,j=0;
