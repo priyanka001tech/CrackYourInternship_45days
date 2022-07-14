@@ -7,7 +7,7 @@ public:
         int n=arr.size(); 
         while(j<n){
             while(l.size()>0 && l.back()<arr[j]){
-                l.pop_back();
+                l.pop_back(); 
             }
             l.push_back(arr[j]);
             
